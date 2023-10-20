@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".From"
+    android:background="#2196F3">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Request Form"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/headerform"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerform"
+        android:text="Select Start Date"
+        android:textSize="21dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="9dp"
+        />
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_date"
+        android:textSize="24dp"
+        android:padding="10dp"
+        android:text="select date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        android:background="@drawable/edit_text_bg"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="9dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerform"
+        android:text="Select End Date"
+        android:id="@+id/tv2"
+        android:textSize="24dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginTop="35dp"
+        />
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/end_date"
+        android:textSize="24dp"
+        android:padding="10dp"
+        android:text="select date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        android:background="@drawable/edit_text_bg"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="9dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv3"
+        android:text="Reason For Leave : "
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="9dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/end_date"/>
+    <EditText
+        android:layout_width="400dp"
+        android:background="@drawable/edit_text_bg"
+        android:layout_height="200dp"
+        android:id="@+id/reason"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv3"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:hint="Type Here"
+        android:gravity="top"
+        android:paddingStart="9dp"
+        android:paddingEnd="9dp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitf"
+        android:text="Submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reason"
+        android:layout_marginTop="17dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
